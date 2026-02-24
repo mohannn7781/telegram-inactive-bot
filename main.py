@@ -1,9 +1,10 @@
+import os
 import json
 from datetime import datetime
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, CommandHandler, ContextTypes, filters
 
-TOKEN = "8760694566:AAEbsYD4LYZKoaQmaJHpRDRKqzsWLVJ-yQE"
+TOKEN = os.getenv("BOT_TOKEN")
 
 DATA_FILE = "activity.json"
 
